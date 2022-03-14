@@ -9,10 +9,10 @@ const connection = mysql.createConnection({
   
     port: 3306,
 
-    user: process.env.USER,
+    user: process.env.DB_USER,
 
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
 });
 
 // function for mainmenu with options
